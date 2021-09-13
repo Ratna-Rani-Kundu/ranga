@@ -26,11 +26,10 @@
   <main class="main">
      <div class="search-field">
       <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
+        <form class="d-flex">
+          <input id="input-field" class="form-control me-2 search-field" type="search" placeholder="Search your product" aria-label="Search">
+          <button class="btn bg-warning " type="submit" onclick="loadProducts()">Search</button>
+        </form>
       </div>
     </div> 
     <div class="row">
@@ -84,7 +83,7 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button class="btn btn-warning text-center">Buy Now</button>
           </div>
         </div>
       </div>
